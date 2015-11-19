@@ -84,12 +84,12 @@ var test = document.createEelment('div');
 test.innerHTML = args.search || '';
 document.body.appendChild(test);
 
-// trigger url ?search=&lt;img src onerror="alert('反射型 XSS')"/&gt;
+// trigger url ?search=&lt;img src onerror="alert('DOM-Based XSS')"/&gt;
         </code>
       </pre>
 
       <h3>payload</h3>
-      <a href='?search=&lt;img%20src%20onerror=%22alert(%27反射型 XSS%27)%22/&gt;' target="_self">触发DOM-based XSS</a>
+      <a href='?search=&lt;img%20src%20onerror=%22alert(%27DOM-Based XSS%27)%22/&gt;' target="_self">触发DOM-based XSS</a>
     </section>
 
     <script src="urlargs.js"></script>
