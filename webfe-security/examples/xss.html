@@ -65,7 +65,7 @@ function saveName(name) {
 function getName() {
   return localStorage.getItem('name');
 }
-
+// &lt;img src onerror="alert('存储型 XSS')"/&gt;
 document.getElementById('storage-trigger').onclick = function () {
   var div = document.createElement('div');
   div.innerHTML = getName();
